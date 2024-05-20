@@ -31,6 +31,7 @@ gtdb <- read.xlsx("gtdbtk.xlsx", sheet = "Sheet1", cols = 1:2) %>%
 
 ## Summary stats
 # Ugly codes for summarizing the number of genomes assigned to GTDB taxa at each taxonomic rank
+# Using a loop or function would be better.
 Domain.stat <- gtdb %>% 
   group_by(Domain) %>% 
   summarise(Genome_abundance = n()) %>% 
