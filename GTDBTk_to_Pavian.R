@@ -69,8 +69,8 @@ Species.stat <- gtdb %>%
 
 # Combine the stat
 gtdb.stat <- bind_rows(Domain.stat, Phylum.stat, Class.stat,
-                     Order.stat, Family.stat,
-                     Genus.stat, Species.stat) %>% 
+                       Order.stat, Family.stat,
+                       Genus.stat, Species.stat) %>% 
   drop_na()
   # "drop_na()" seems to be necessary for more accurate plots.
 
